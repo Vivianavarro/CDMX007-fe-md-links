@@ -1,4 +1,6 @@
+
 const fs = require('fs');
+
 
 //Leyendo Archivo para obtener los links
 const mdLinks = (data) => {
@@ -16,11 +18,10 @@ const mdLinks = (data) => {
     });
     console.log(read);
   };
+
+  console.log(mdLinks);
   //Conteo total de Links
   let totalLinks = result.length;
   console.log("--Total Links: ");
   console.log(totalLinks);
 };
-
-
-module.exports.mdLinks = mdLinks;
